@@ -7,6 +7,10 @@ public class Food {
     double amount;
     int expirationDate;
 
+    public Food(String name){
+
+    }
+
     boolean availability;
 
 

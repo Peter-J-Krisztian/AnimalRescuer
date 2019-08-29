@@ -8,4 +8,8 @@ public class Animal {
     double spiritLevel;
     String favoriteFood;
     String favoriteRecreationActivity;
+
+    public Animal(String name,int age){
+
+    }
 }
