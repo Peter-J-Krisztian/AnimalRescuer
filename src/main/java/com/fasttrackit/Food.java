@@ -1,12 +1,25 @@
 package com.fasttrackit;
+
 import java.time.LocalDate;
 
 public class Food {
-    String name;
-    double price;
-    double amount;
-    int expirationDate;
+    private String name;
+    private double price;
+    private double amount;
+    private LocalDate expirationDate;
+    boolean availability;
 
+    public boolean expirationDayCheck(LocalDate expirationDate, LocalDate now) {
+        if (now.isBefore(expirationDate)) {
+            System.out.println("isn't expired");
+            return true;
+        } else {
+            System.out.println("is expired");
+            return false;
+        }
+    }
+
+    //setters & getters
     public String getName() {
         return name;
     }
@@ -31,13 +44,14 @@ public class Food {
         this.amount = amount;
     }
 
-    public int getExpirationDate() {
+    public LocalDate getExpirationDate() {
         return expirationDate;
     }
 
-    public void setExpirationDate(int expirationDate) {
+    public void setExpirationDate(LocalDate expirationDate) {
         this.expirationDate = expirationDate;
     }
+
 
     public boolean isAvailability() {
         return availability;
@@ -47,11 +61,6 @@ public class Food {
         this.availability = availability;
     }
 
-    public Food(String name){
-
-    }
-
-    boolean availability;
 
 
 }

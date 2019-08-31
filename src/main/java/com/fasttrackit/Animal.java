@@ -1,17 +1,21 @@
 package com.fasttrackit;
 
 public class Animal {
-    String name;
-    int age;
-    double healthLevel;
-    double hungryLevel;
-    double spiritLevel;
-    String favoriteFood;
-    String favoriteRecreationActivity;
+    private String name;
+    private int age;
+    private double healthLevel;
+    private double hungryLevel;
+    private double spiritLevel;
+    private String favoriteFood;
+    private String favoriteRecreationActivity;
+
+   /* Constructor
 
     public Animal(String name,int age){
 
-    }
+    }*/
+
+    //setters and getters
 
     public String getName() {
         return name;
